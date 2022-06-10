@@ -92,7 +92,7 @@ def soup(update, context):
     inputs = context.args
     results: List[Dish] = []
 
-    if len(inputs) > 0:
+    if len(inputs):
         price_thrsh = float(inputs[0])
     else:
         price_thrsh = 10  # Default budget is 10 CHF
